@@ -56,5 +56,5 @@ pids
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Docker files 
-Dockerfile
-docker-compose.yaml
+# Dockerfile
+# docker-compose.yaml
