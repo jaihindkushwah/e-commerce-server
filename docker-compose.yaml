@@ -22,6 +22,17 @@ services:
     depends_on:
       - mysql
     restart: always
+  rabbitmq:
+    container_name: rabbitmq_container
+    image: rabbitmq:management-alpine
+    ports:
+      - "5672:5672"
+      - "5671:15672"
+    volumes:
+      - ../docker-volumes/rabbitmq:/var/lib/rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
 
       
       
